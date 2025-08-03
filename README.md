@@ -27,3 +27,14 @@ Este projeto é uma aplicação web simples desenvolvida com HTML, CSS e MySQL. 
 
 ### 🔄 Integração Front-End e Back-End (Simples)
 - Estrutura de como os dados fluem do formulário HTML até serem salvos no banco de dados (via linguagem intermediária como PHP ou apenas modelo conceitual no caso de estudos).
+
+CREATE DATABASE cadastro_usuarios;
+USE cadastro_usuarios;
+
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100),
+  email VARCHAR(100),
+  data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
